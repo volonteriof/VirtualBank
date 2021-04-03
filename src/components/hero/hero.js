@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Video from "../../videos/video.mp4"
 import { Link } from "gatsby"
+import { Button } from "../button/button"
 import { MdArrowForward } from "@react-icons/all-files/md/MdArrowForward"
 import { MdKeyboardArrowRight } from "@react-icons/all-files/md/MdKeyboardArrowRight"
 
@@ -105,15 +106,11 @@ function Hero() {
           Sig up for a new account today and receive 250$ in credit towards your
           next payment.
         </HeroDesc>
-        {/* <HeroButton>
-          <HeroButtonLink
-            to="signup"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
+        <HeroButton>
+          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
-          </HeroButtonLink>
-        </HeroButton> */}
+          </Button>
+        </HeroButton>
       </HeroContent>
     </HeroContainer>
   )
