@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import Video from "../../videos/video.mp4"
-import { Link } from "gatsby"
 import { Button } from "../button/button"
 import { MdArrowForward } from "@react-icons/all-files/md/MdArrowForward"
 import { MdKeyboardArrowRight } from "@react-icons/all-files/md/MdKeyboardArrowRight"
@@ -14,6 +13,22 @@ const HeroContainer = styled.div`
   height: 800px;
   padding: 0 30px;
   background-color: #0c0c0c;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 1;
+  }
 `
 
 const HeroBackground = styled.div`
@@ -71,7 +86,7 @@ const HeroDesc = styled.p`
   }
 `
 
-const HeroButton = styled.div`
+const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: content;
@@ -106,11 +121,11 @@ function Hero() {
           Sig up for a new account today and receive 250$ in credit towards your
           next payment.
         </HeroDesc>
-        <HeroButton>
+        <ButtonWrapper>
           <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroButton>
+        </ButtonWrapper>
       </HeroContent>
     </HeroContainer>
   )

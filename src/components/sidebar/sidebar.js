@@ -60,12 +60,12 @@ const SideLink = styled(Link)`
   }
 `
 
-const SideButton = styled.div`
+const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
 
-const SideButtonLink = styled(Link)`
+const SideButton = styled(Link)`
   padding: 16px 64px;
   color: #010606;
   background-color: #01bf71;
@@ -106,9 +106,9 @@ function Sidebar({ isOpen, toggle }) {
             Sign Up
           </SideLink>
         </SideMenu>
-        <SideButton>
-          <SideButtonLink to="/signin">Sign In</SideButtonLink>
-        </SideButton>
+        <ButtonWrapper>
+          <SideButton to="/signin">Sign In</SideButton>
+        </ButtonWrapper>
       </SideWrapper>
     </SideContainer>
   )

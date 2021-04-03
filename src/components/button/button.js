@@ -12,8 +12,8 @@ export const Button = styled(Link)`
   border-radius: 50px;
   outline: none;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  text-decoration: none;
   white-space: nowrap;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 

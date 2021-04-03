@@ -10,7 +10,6 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   height: 80px;
-  /* margin-top: -80px; */
   background-color: #000000;
   font-size: 1rem;
   z-index: 2;
@@ -86,7 +85,7 @@ const NavLink = styled(Link)`
   }
 `
 
-const NavButton = styled.nav`
+const ButtonWrapper = styled.nav`
   display: flex;
   align-items: center;
 
@@ -95,7 +94,7 @@ const NavButton = styled.nav`
   }
 `
 
-const NavButtonLink = styled(Link)`
+const NavButton = styled(Link)`
   padding: 10px 22px;
   color: #010606;
   background-color: #01bf71;
@@ -137,9 +136,9 @@ function Navbar({ toggle }) {
             <NavLink to="signup">Sign Up</NavLink>
           </NavItem>
         </NavMenu>
-        <NavButton>
-          <NavButtonLink to="/signin">Sign In</NavButtonLink>
-        </NavButton>
+        <ButtonWrapper>
+          <NavButton to="/signin">Sign In</NavButton>
+        </ButtonWrapper>
       </NavContainer>
     </Nav>
   )
