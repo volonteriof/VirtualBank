@@ -1,7 +1,7 @@
 import React from "react"
-import { FaBars } from "@react-icons/all-files/fa/FaBars"
-import { Link } from "gatsby"
 import styled from "styled-components"
+import { Link } from "gatsby"
+import { FaBars } from "@react-icons/all-files/fa/FaBars"
 
 const Nav = styled.nav`
   display: flex;
@@ -13,14 +13,14 @@ const Nav = styled.nav`
   /* margin-top: -80px; */
   background-color: #000000;
   font-size: 1rem;
-  z-index: 1;
+  z-index: 2;
 
   @media (max-width: 960px) {
     transition: 0.8s all ease;
   }
 `
 
-const NavbarContainer = styled.div`
+const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,14 +28,12 @@ const NavbarContainer = styled.div`
   max-width: 1100px;
   height: 80px;
   padding: 0 24px;
-  z-index: 1;
 `
 
 const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   justify-self: flex-start;
-  margin-left: 24px;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -43,7 +41,7 @@ const NavLogo = styled(Link)`
   cursor: pointer;
 `
 
-const MobileIcon = styled.div`
+const HamburgerIcon = styled.div`
   display: none;
 
   @media (max-width: 768px) {
@@ -74,7 +72,7 @@ const NavItem = styled.li`
   height: 80px;
 `
 
-const NavLinks = styled(Link)`
+const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   height: 100%;
@@ -117,35 +115,33 @@ const NavButtonLink = styled(Link)`
   }
 `
 
-function Navbar() {
+function Navbar({ toggle }) {
   return (
-    <>
-      <Nav>
-        <NavbarContainer>
-          <NavLogo to="/">VirtualBank</NavLogo>
-          <MobileIcon>
-            <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks to="about">About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="services">Services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="signup">Sign Up</NavLinks>
-            </NavItem>
-          </NavMenu>
-          <NavButton>
-            <NavButtonLink to="/signin">Sign In</NavButtonLink>
-          </NavButton>
-        </NavbarContainer>
-      </Nav>
-    </>
+    <Nav>
+      <NavContainer>
+        <NavLogo to="/">VirtualBank</NavLogo>
+        <HamburgerIcon onClick={toggle}>
+          <FaBars />
+        </HamburgerIcon>
+        <NavMenu>
+          <NavItem>
+            <NavLink to="about">About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="discover">Discover</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="services">Services</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="signup">Sign Up</NavLink>
+          </NavItem>
+        </NavMenu>
+        <NavButton>
+          <NavButtonLink to="/signin">Sign In</NavButtonLink>
+        </NavButton>
+      </NavContainer>
+    </Nav>
   )
 }
 

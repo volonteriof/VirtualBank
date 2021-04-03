@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "../navbar/navbar"
+import Sidebar from "../sidebar/sidebar"
+import Hero from "../hero/hero"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
@@ -12,10 +14,18 @@ const GlobalStyle = createGlobalStyle`
 `
 
 function Layout(props) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div>
       <GlobalStyle />
-      <Navbar />
+      <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Hero />
       {props.children}
     </div>
   )
