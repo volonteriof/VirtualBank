@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Icon1 from "../../../static/images/svg-1.svg"
-import Icon2 from "../../../static/images/svg-2.svg"
-import Icon3 from "../../../static/images/svg-3.svg"
+import Icon1 from "../../../static/images/svg-4.svg"
+import Icon2 from "../../../static/images/svg-5.svg"
+import Icon3 from "../../../static/images/svg-6.svg"
 
 const ServicesContainer = styled.div`
   display: flex;
