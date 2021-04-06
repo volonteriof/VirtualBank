@@ -111,16 +111,16 @@ function SignIn() {
   return (
     <Container>
       <FormWrapper>
-        <Icon to="/">Virtual Bank</Icon>
+        <Icon to="/">VirtualBank</Icon>
         <FormContent>
           <Form action="#">
-            <FormHeading>Sign in to your account</FormHeading>
+            <FormHeading>Accedi al tuo account</FormHeading>
             <FormLabel htmlFor="for">Email</FormLabel>
             <FormInput type="email" required />
             <FormLabel htmlFor="for">Password</FormLabel>
             <FormInput type="password" required />
-            <FormButton type="submit">Continue</FormButton>
-            <Text>Forgot password?</Text>
+            <FormButton type="submit">Continua</FormButton>
+            <Text>Password dimenticata?</Text>
           </Form>
         </FormContent>
       </FormWrapper>
