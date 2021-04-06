@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "../button/button"
-import Image from "../../images/svg-1.svg"
 
 const InfoContainer = styled.div`
   color: #ffffff;
@@ -29,7 +28,7 @@ const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `"col2 col1"` : `"col1 col2`};
+    imgStart ? `"col2 col1"` : `"col1 col2"`};
 
   @media (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -69,7 +68,7 @@ const Heading = styled.h1`
   margin-bottom: 24px;
   color: ${({ lightText }) => (lightText ? "#f7f8f8" : "#010606")};
   font-size: 48px;
-  line-height: 1.1px;
+  line-height: 1.1;
   font-weight: 600;
 
   @media (max-width: 480px) {
@@ -110,7 +109,10 @@ function Info({
   heading,
   darkText,
   description,
+  primary,
+  dark,
   buttonLabel,
+  imgSrc,
   alt,
 }) {
   return (
@@ -123,13 +125,15 @@ function Info({
               <Heading lightText={lightText}>{heading}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <ButtonWrapper>
-                <Button to="home">{buttonLabel}</Button>
+                <Button to="home" primary={primary ? 1 : 0} dark={dark ? 1 : 0}>
+                  {buttonLabel}
+                </Button>
               </ButtonWrapper>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrapper>
-              <Img src={Image} alt={alt} />
+              <Img src={imgSrc} alt={alt} />
             </ImgWrapper>
           </Column2>
         </InfoRow>

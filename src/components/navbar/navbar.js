@@ -10,6 +10,7 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   height: 80px;
+  margin-top: -80px;
   background-color: #000000;
   font-size: 1rem;
   z-index: 2;

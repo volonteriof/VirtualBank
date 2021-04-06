@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import Video from "../../videos/video.mp4"
+import Video from "../../../static/videos/video.mp4"
 import { Button } from "../button/button"
 import { MdArrowForward } from "@react-icons/all-files/md/MdArrowForward"
 import { MdKeyboardArrowRight } from "@react-icons/all-files/md/MdKeyboardArrowRight"
@@ -10,7 +10,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 800px;
+  height: 100vh;
   padding: 0 30px;
   background-color: #0c0c0c;
 
