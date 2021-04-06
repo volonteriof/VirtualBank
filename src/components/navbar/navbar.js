@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FaBars } from "@react-icons/all-files/fa/FaBars"
@@ -11,7 +11,8 @@ const Nav = styled.nav`
   top: 0;
   height: 80px;
   margin-top: -80px;
-  background-color: #000000;
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? "#000000" : "transparent"};
   font-size: 1rem;
   z-index: 2;
 
@@ -81,7 +82,7 @@ const NavLink = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-  &.active {
+  &:active {
     border-bottom: 3px solid #01bf71;
   }
 `
@@ -116,8 +117,22 @@ const NavButton = styled(Link)`
 `
 
 function Navbar({ toggle }) {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav)
+  }, [])
+
   return (
-    <Nav>
+    <Nav scrollNav={scrollNav}>
       <NavContainer>
         <NavLogo to="/">VirtualBank</NavLogo>
         <HamburgerIcon onClick={toggle}>
