@@ -82,27 +82,27 @@ const ServicesDesc = styled.p`
 function Services() {
   return (
     <ServicesContainer id="services">
-      <ServicesHeading>Our services</ServicesHeading>
+      <ServicesHeading>I nostri servizi</ServicesHeading>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesTitle>Reduce Expenses</ServicesTitle>
+          <ServicesTitle>Riduci le spese</ServicesTitle>
           <ServicesDesc>
-            We help reduce your fees and increase your overall revenue.
+            Ti aiutiamo a ridurre le spese e aumentare i guadagni.
           </ServicesDesc>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesTitle>Virtual offices</ServicesTitle>
+          <ServicesTitle>Sportelli vitruali</ServicesTitle>
           <ServicesDesc>
-            You can access our platform online anywhere in the world.
+            Puoi accedere al tuo conto da qualunque parte del mondo.
           </ServicesDesc>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesTitle>Premium benefits</ServicesTitle>
+          <ServicesTitle>Offerte premium</ServicesTitle>
           <ServicesDesc>
-            Unlock our special membership card that returns 5% cash back.
+            Ottieni la nostra carta di credito che offre un cash back del 5%.
           </ServicesDesc>
         </ServicesCard>
       </ServicesWrapper>

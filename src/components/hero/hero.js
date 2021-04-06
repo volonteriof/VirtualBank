@@ -116,14 +116,14 @@ function Hero() {
         <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBackground>
       <HeroContent>
-        <HeroHeading>Virtual Banking Made Easy</HeroHeading>
+        <HeroHeading>La banca virtuale semplice</HeroHeading>
         <HeroDesc>
-          Sign up for a new account today and receive 250$ in credit towards
-          your next payment.
+          Apri un nuovo conto oggi e ricevi 250€ di credito da spendere sul tuo
+          primo acquisto!
         </HeroDesc>
         <ButtonWrapper>
           <Button to="account" onMouseEnter={onHover} onMouseLeave={onHover}>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Registrati subito {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </ButtonWrapper>
       </HeroContent>

@@ -97,17 +97,17 @@ function Sidebar({ isOpen, toggle }) {
             About
           </SideLink>
           <SideLink href="#discover" onClick={toggle}>
-            Discover
+            Scopri
           </SideLink>
           <SideLink href="#services" onClick={toggle}>
-            Services
+            Servizi
           </SideLink>
           <SideLink href="#signup" onClick={toggle}>
-            Sign Up
+            Registrati
           </SideLink>
         </SideMenu>
         <ButtonWrapper>
-          <SideButton to="account">Sign In</SideButton>
+          <SideButton to="account">Accedi</SideButton>
         </ButtonWrapper>
       </SideWrapper>
     </SideContainer>

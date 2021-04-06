@@ -143,17 +143,17 @@ function Navbar({ toggle }) {
             <NavLink href="#about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#discover">Discover</NavLink>
+            <NavLink href="#discover">Scopri</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#services">Services</NavLink>
+            <NavLink href="#services">Servizi</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#signup">Sign Up</NavLink>
+            <NavLink href="#signup">Registrati</NavLink>
           </NavItem>
         </NavMenu>
         <ButtonWrapper>
-          <NavButton to="account">Sign In</NavButton>
+          <NavButton to="account">Accedi</NavButton>
         </ButtonWrapper>
       </NavContainer>
     </Nav>
