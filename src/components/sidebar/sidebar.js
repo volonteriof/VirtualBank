@@ -44,7 +44,7 @@ const SideMenu = styled.ul`
   }
 `
 
-const SideLink = styled(Link)`
+const SideLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,16 +93,16 @@ function Sidebar({ isOpen, toggle }) {
       </CloseIcon>
       <SideWrapper>
         <SideMenu>
-          <SideLink to="about" onClick={toggle}>
+          <SideLink href="#about" onClick={toggle}>
             About
           </SideLink>
-          <SideLink to="discover" onClick={toggle}>
+          <SideLink href="#discover" onClick={toggle}>
             Discover
           </SideLink>
-          <SideLink to="services" onClick={toggle}>
+          <SideLink href="#services" onClick={toggle}>
             Services
           </SideLink>
-          <SideLink to="signup" onClick={toggle}>
+          <SideLink href="#signup" onClick={toggle}>
             Sign Up
           </SideLink>
         </SideMenu>

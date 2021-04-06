@@ -125,7 +125,11 @@ function Info({
               <Heading lightText={lightText}>{heading}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <ButtonWrapper>
-                <Button to="home" primary={primary ? 1 : 0} dark={dark ? 1 : 0}>
+                <Button
+                  to="account"
+                  primary={primary ? 1 : 0}
+                  dark={dark ? 1 : 0}
+                >
                   {buttonLabel}
                 </Button>
               </ButtonWrapper>
