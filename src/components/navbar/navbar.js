@@ -138,7 +138,7 @@ function Navbar({ toggle }) {
           </NavItem>
         </NavMenu>
         <ButtonWrapper>
-          <NavButton to="signin">Sign In</NavButton>
+          <NavButton to="account">Sign In</NavButton>
         </ButtonWrapper>
       </NavContainer>
     </Nav>

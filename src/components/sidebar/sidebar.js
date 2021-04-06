@@ -107,7 +107,7 @@ function Sidebar({ isOpen, toggle }) {
           </SideLink>
         </SideMenu>
         <ButtonWrapper>
-          <SideButton to="/signin">Sign In</SideButton>
+          <SideButton to="account">Sign In</SideButton>
         </ButtonWrapper>
       </SideWrapper>
     </SideContainer>
