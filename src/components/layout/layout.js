@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import Navbar from "../navbar/navbar"
 import Sidebar from "../sidebar/sidebar"
-import Hero from "../hero/hero"
 import { createGlobalStyle } from "styled-components"
 import "@fontsource/encode-sans-expanded/400.css"
+import "@fontsource/encode-sans-expanded/600.css"
 import "@fontsource/encode-sans-expanded/700.css"
 
 const GlobalStyle = createGlobalStyle`
@@ -23,13 +23,12 @@ function Layout(props) {
   }
 
   return (
-    <div>
+    <>
       <GlobalStyle />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Hero />
       {props.children}
-    </div>
+    </>
   )
 }
 

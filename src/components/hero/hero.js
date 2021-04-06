@@ -118,8 +118,8 @@ function Hero() {
       <HeroContent>
         <HeroHeading>Virtual Banking Made Easy</HeroHeading>
         <HeroDesc>
-          Sig up for a new account today and receive 250$ in credit towards your
-          next payment.
+          Sign up for a new account today and receive 250$ in credit towards
+          your next payment.
         </HeroDesc>
         <ButtonWrapper>
           <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
