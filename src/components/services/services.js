@@ -9,14 +9,10 @@ const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 900px;
   background-color: #010606;
 
   @media (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media (max-width: 480px) {
     height: 1300px;
   }
 `

@@ -1,11 +1,11 @@
 import React from "react"
 
-function SigninPage() {
+function SignInPage() {
   return (
     <div>
-      <h1>Sign in page</h1>
+      <h1>Sign in</h1>
     </div>
   )
 }
 
-export default SigninPage
+export default SignInPage

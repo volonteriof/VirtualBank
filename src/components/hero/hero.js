@@ -122,7 +122,7 @@ function Hero() {
           your next payment.
         </HeroDesc>
         <ButtonWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button to="signin" onMouseEnter={onHover} onMouseLeave={onHover}>
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </ButtonWrapper>

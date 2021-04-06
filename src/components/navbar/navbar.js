@@ -72,7 +72,7 @@ const NavItem = styled.li`
   height: 80px;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   display: flex;
   align-items: center;
   height: 100%;
@@ -125,20 +125,20 @@ function Navbar({ toggle }) {
         </HamburgerIcon>
         <NavMenu>
           <NavItem>
-            <NavLink to="about">About</NavLink>
+            <NavLink href="#about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="discover">Discover</NavLink>
+            <NavLink href="#discover">Discover</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="services">Services</NavLink>
+            <NavLink href="#services">Services</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="signup">Sign Up</NavLink>
+            <NavLink href="#signup">Sign Up</NavLink>
           </NavItem>
         </NavMenu>
         <ButtonWrapper>
-          <NavButton to="/signin">Sign In</NavButton>
+          <NavButton to="signin">Sign In</NavButton>
         </ButtonWrapper>
       </NavContainer>
     </Nav>

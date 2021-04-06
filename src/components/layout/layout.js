@@ -7,11 +7,13 @@ import "@fontsource/encode-sans-expanded/600.css"
 import "@fontsource/encode-sans-expanded/700.css"
 
 const GlobalStyle = createGlobalStyle`
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: "Encode Sans Expanded", sans-serif;
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Encode Sans Expanded", sans-serif;
+      scroll-behavior: smooth;
+      scroll-margin-top: 80px;
     }
 `
 
