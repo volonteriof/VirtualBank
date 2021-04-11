@@ -34,7 +34,7 @@ const ServicesWrapper = styled.div`
   grid-gap: 16px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 30px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
@@ -56,6 +56,10 @@ const ServicesCard = styled.div`
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+
+  @media (max-width: 480px) {
+    padding: 30px 10px;
+  }
 
   &:hover {
     transform: scale(1.02);

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Helmet } from "react-helmet"
 import Navbar from "../navbar/navbar"
 import Sidebar from "../sidebar/sidebar"
 import { createGlobalStyle } from "styled-components"
@@ -26,6 +27,9 @@ function Layout(props) {
 
   return (
     <>
+      <Helmet>
+        <title>VirtualBank</title>
+      </Helmet>
       <GlobalStyle />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
