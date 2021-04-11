@@ -14,6 +14,14 @@ const HeroContainer = styled.div`
   padding: 0 30px;
   background-color: #0c0c0c;
 
+  @media (max-width: 480px) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: 320px) {
+    padding-top: 150px;
+  }
+
   :before {
     content: "";
     position: absolute;

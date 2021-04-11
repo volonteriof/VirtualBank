@@ -35,12 +35,17 @@ const SideWrapper = styled.div`
 const SideMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(5, 80px);
   text-align: center;
   list-style: none;
 
   @media (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(5, 60px);
+  }
+
+  @media (max-width: 320px) {
+    grid-template-rows: repeat(4, 40px);
+    margin-bottom: 20px;
   }
 `
 
