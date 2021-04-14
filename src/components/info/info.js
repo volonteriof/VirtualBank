@@ -21,6 +21,10 @@ const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   z-index: 1;
+
+  @media (max-width: 480px) {
+    height: 660px;
+  }
 `
 
 const InfoRow = styled.div`
