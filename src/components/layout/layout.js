@@ -3,9 +3,6 @@ import { Helmet } from "react-helmet"
 import Navbar from "../navbar/navbar"
 import Sidebar from "../sidebar/sidebar"
 import { createGlobalStyle } from "styled-components"
-import "@fontsource/encode-sans-expanded/400.css"
-import "@fontsource/encode-sans-expanded/600.css"
-import "@fontsource/encode-sans-expanded/700.css"
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -28,6 +25,11 @@ function Layout(props) {
   return (
     <>
       <Helmet>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
         <title>VirtualBank</title>
       </Helmet>
       <GlobalStyle />
