@@ -90,21 +90,21 @@ function Services() {
       <ServicesHeading>I nostri servizi</ServicesHeading>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon1} alt="Servizio" />
           <ServicesTitle>Riduci le spese</ServicesTitle>
           <ServicesDesc>
             Ti aiutiamo a ridurre le spese e aumentare i guadagni.
           </ServicesDesc>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon2} alt="Servizio" />
           <ServicesTitle>Sportelli vitruali</ServicesTitle>
           <ServicesDesc>
             Puoi accedere al tuo conto da qualunque parte del mondo.
           </ServicesDesc>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon3} alt="Servizio" />
           <ServicesTitle>Offerte premium</ServicesTitle>
           <ServicesDesc>
             Ottieni la nostra carta di credito che offre un cash back del 5%.

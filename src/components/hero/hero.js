@@ -126,7 +126,7 @@ function Hero() {
       <HeroContent>
         <HeroHeading>La banca virtuale semplice</HeroHeading>
         <HeroDesc>
-          Apri un nuovo conto oggi e ricevi 250€ di credito da spendere sul tuo
+          Apri un nuovo conto oggi e ricevi 100€ di credito da spendere sul tuo
           primo acquisto!
         </HeroDesc>
         <ButtonWrapper>
