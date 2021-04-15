@@ -32,12 +32,11 @@ const SideWrapper = styled.div`
   color: #ffffff;
 `
 
-const SideMenu = styled.ul`
+const SideMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 80px);
   text-align: center;
-  list-style: none;
 
   @media (max-width: 480px) {
     grid-template-rows: repeat(5, 60px);
